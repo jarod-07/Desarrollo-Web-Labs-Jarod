@@ -8,22 +8,6 @@
         <link rel="stylesheet" href="styles.css" />
         <link href="http://fonts.cdnfonts.com/css/roboto" rel="stylesheet">
                 
-        <style>
-            body{
-                font-family: 'Roboto' , sans-serif;
-            }
-
-            .main{
-                margin-top: 50px;
-            }
-
-            .container {
-                width: 100%;
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-            }
-        </style>
 
     </head>
     <body>
@@ -33,19 +17,23 @@
                 <h1>Bienvenido</h1>
             </div>
 
-            <div  class="container">
-               
-                <input id="Usuario" name="usuaio0" val="" placeholder="Ingrese un usuario" />
-            </div>
-            
-            <div  class="container">
-               
-                <input id="contraseña" name="contraseña" val="" placeholder="Ingrese un contraseña" />
-            </div>
-            
-            <div class="container">
-                <button>Enviar</button>
-            </div>
+            <form>
+                <div  class="container">
+                
+                    <input type="text" id="Usuario" name="usuaio0" value="" placeholder="Ingrese un usuario" />
+                </div>
+                
+                <div  class="container">
+                
+                    <input type="password" id="contraseña" name="contraseña" value="" placeholder="Ingrese un contraseña" />
+                </div>
+                
+                <div class="container">
+                    <button type="submit">
+                        Enviar
+                    </button>
+                </div>
+        </form>
             
         </div>
     </body>
