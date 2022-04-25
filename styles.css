@@ -50,3 +50,12 @@ button{
  :-ms-input-placeholder {  
     text-align: center; 
  }
+
+ .alert {
+    text-align: center;
+    color:red;
+ }
+
+ .hide{
+    display: none;
+ }

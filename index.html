@@ -7,20 +7,23 @@
         <link rel="icon" type="image/x-icon" href="favicon.ico" />
         <link rel="stylesheet" href="styles.css" />
         <link href="http://fonts.cdnfonts.com/css/roboto" rel="stylesheet">
-                
-
+        <!--
+            Asi son los comentarios
+        -->
+        <script src="script.js"></script>
+    
     </head>
     <body>
         <div class="container">
             
             <div  class="container">
-                <h1>Bienvenido</h1>
+                <h1 id="title">Bienvenido </h1>
             </div>
 
             <form>
                 <div  class="container">
                 
-                    <input type="text" id="Usuario" name="usuaio0" value="" placeholder="Ingrese un usuario" />
+                    <input type="text" id="usuario" name="usuario" value="" placeholder="Ingrese un usuario" />
                 </div>
                 
                 <div  class="container">
@@ -28,8 +31,14 @@
                     <input type="password" id="contraseña" name="contraseña" value="" placeholder="Ingrese un contraseña" />
                 </div>
                 
-                <div class="container">
-                    <button type="submit">
+                <div class="container alert">
+                    <p id = "alerta" class="hide">
+                       Usuario o contraseña invalidos.
+                    </p>
+                </div>
+
+                <div class="container">    
+                    <button onclick="return validarUsuario();" type="submit">
                         Enviar
                     </button>
                 </div>
